@@ -65,7 +65,7 @@ public class Task2 {
         if (scanner.endsWith("завершен"))
             System.out.println("Процесс завершен");
 
-        if (scanner.compareToIgnoreCase("ошибка")==0) // почему-то не работает. Вроде правильно. Буду разбиратся
+        if (scanner.toLowerCase().contains("ошибка"))
             System.out.println("Произошла ошибка");
 
         StringBuilder allText = new StringBuilder();
